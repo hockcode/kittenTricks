@@ -11,12 +11,7 @@
     "url": "https://github.com/akveo/kittenTricks/issues"
   },
   "main": "./index.js",
-  "workspaces": {
-    "nohoist": [
-      "*",
-      "*/**"
-    ]
-  },
+
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
