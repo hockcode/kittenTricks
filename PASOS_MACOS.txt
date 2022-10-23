@@ -1,0 +1,48 @@
+X-Sera Este lo primero??
+https://dev.to/leofolive/setup-macbook-m1-for-react-native-development-4ca7
+
+1- https://akveo.github.io/react-native-ui-kitten/docs/guides/getting-started#getting-started
+
+(limpia o acutializa los paquetes)
+npm un -g react-native-cli && npm i -g @react-native-community/cli
+
+(va descargar template e intentar instalar dependencias)
+npx react-native init MyApp --template @ui-kitten/template-ts
+-- ERROR con not locate gemfiles, installing bundler
+
+-- locale incorrecto LANG="es_419.UTF-8"
+ export LANG=en_US.UTF-8
+
+Hay que ingresar al folder App/ios y ejecutar lo siguente:    
+    pod install 
+
+https://stackoverflow.com/questions/56916798/react-rctbridgedelegate-h-file-not-found
+
+
+
+
+
+
+
+PASO 1 
+chequear locale
+Si es diferente aplicar  export LANG=en_US.UTF-8
+
+PASO 2
+npm un -g react-native-cli && npm i -g @react-native-community/cli
+
+PASO 3
+npx react-native init domoXiApp --template @ui-kitten/template-ts
+
+ERROR ✖ Installing Bundler
+error Could not locate Gemfile
+✖ Installing Bundler
+
+--FIX CD {APP_FOLDER} 
+sudo arch -x86_64 gem install ffi
+CD ios
+arch -x86_64 pod install
+CERRAR TERMINAL y npm install
+
+sudo arch -x86_64 gem install ffi
+
